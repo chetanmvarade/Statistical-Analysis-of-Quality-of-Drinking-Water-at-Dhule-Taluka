@@ -1,6 +1,4 @@
-#Statistical Analysis of Drinking Water Quality Dhule Taluka.
-
-**Overview**
+Statistical Analysis of Drinking Water Quality Dhule Taluka.
 
 This project presents a detailed statistical study of drinking water quality across **50 villages in Dhule Taluka**. Water samples were tested for three major quality parameters:
 
@@ -10,8 +8,7 @@ This project presents a detailed statistical study of drinking water quality acr
 
 These parameters were compared against internationally accepted standards and **Bisleri bottled water** as a reference benchmark. The project demonstrates complete statistical workflow including data cleaning, descriptive analysis, distribution fitting, hypothesis testing, and visualization.
 
-# **1. Raw Data Cleaning**
-
+# 1. Raw Data Cleaning
 The raw dataset contained 50 observations (villages) with attributes:
 
 * Temperature
@@ -26,19 +23,19 @@ The raw dataset contained 50 observations (villages) with attributes:
 * Converted data types to numeric
 * Validated ranges:
 
-  * pH must be 0–14
-  * TDS must be positive
-  * Conductivity must be non-negative
+	  * pH must be 0–14
+	  * TDS must be positive
+	  * Conductivity must be non-negative
 * Identified outliers using Z-scores (high TDS values in Nagaon and Saundane)
 * Standardized column names
 
-#**2. Descriptive Statistics**
+#2. Descriptive Statistics
 
 | Parameter        | Mean   | SD     | Variance | Min | Max |
 | ---------------- | ------ | ------ | -------- | --- | --- |
-| **pH**           | 7.426  | 0.217  | 0.047    | 6.8 | 7.8 |
-| **TDS**          | 668.78 | 209.35 | 43825.69 | 316 | 991 |
-| **Conductivity** | 634.59 | 158.25 | 25042.50 | 379 | 991 |
+| pH           | 7.426  | 0.217  | 0.047    | 6.8 | 7.8 |
+| TDS          | 668.78 | 209.35 | 43825.69 | 316 | 991 |
+| Conductivity | 634.59 | 158.25 | 25042.50 | 379 | 991 |
 
 ### Interpretation:
 
