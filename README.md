@@ -29,7 +29,7 @@ The raw dataset contained 50 observations (villages) with attributes:
 * Identified outliers using Z-scores (high TDS values in Nagaon and Saundane)
 * Standardized column names
 
-#2. Descriptive Statistics
+# 2. Descriptive Statistics
 
 | Parameter        | Mean   | SD     | Variance | Min | Max |
 | ---------------- | ------ | ------ | -------- | --- | --- |
