@@ -1,4 +1,4 @@
-Statistical Analysis of Drinking Water Quality Dhule Taluka.
+**Statistical Analysis of Drinking Water Quality Dhule Taluka.**
 
 This project presents a detailed statistical study of drinking water quality across **50 villages in Dhule Taluka**. Water samples were tested for three major quality parameters:
 
@@ -10,11 +10,11 @@ These parameters were compared against internationally accepted standards and **
 
 # 1. Raw Data Cleaning
 The raw dataset contained 50 observations (villages) with attributes:
-
-* Temperature
-* pH
-* TDS
-* Conductivity
+	
+	* Temperature
+	* pH
+	* TDS
+	* Conductivity
 
 ### ✔ Cleaning Steps
 
@@ -39,9 +39,9 @@ The raw dataset contained 50 observations (villages) with attributes:
 
 ### Interpretation:
 
-* pH is within WHO safe limits (6.5 – 8.5)
-* TDS average (669 mg/L) **exceeds recommended WHO limit (500 mg/L)**
-* Conductivity average suggests **high dissolved ion concentration**
+	* pH is within WHO safe limits (6.5 – 8.5)
+	* TDS average (669 mg/L) **exceeds recommended WHO limit (500 mg/L)**
+	* Conductivity average suggests **high dissolved ion concentration**
 
 ---
 
@@ -49,31 +49,31 @@ The raw dataset contained 50 observations (villages) with attributes:
 
 ### ✔ **pH → Lognormal Distribution**
  
-* Test statistic: **3.2575**
-* Degrees of freedom: **5**
-* p-value: **0.9686**
-* ❗ **Do not reject the distribution**
-* Conclusion: pH fits Lognormal Distribution well.
+	* Test statistic: **3.2575**
+	* Degrees of freedom: **5**
+	* p-value: **0.9686**
+	* ❗ **Do not reject the distribution**
+	* Conclusion: pH fits Lognormal Distribution well.
 
 ---
 
-###**TDS → Gamma Distribution**
+# **TDS → Gamma Distribution**
 
-* Test statistic: **2.5394**
-* Degrees of freedom: **4**
-* p-value: **0.7248**
-* ❗ **Do not reject**
-* Conclusion: TDS follows Gamma distribution, typical for skewed environmental data.
+	* Test statistic: **2.5394**
+	* Degrees of freedom: **4**
+	* p-value: **0.7248**
+	* ❗ **Do not reject**
+	* Conclusion: TDS follows Gamma distribution, typical for skewed environmental data.
 
 ---
 
 ### ✔ **Conductivity → Normal Distribution**
 
-* Test statistic: **4.3558**
-* Degrees of freedom: **5**
-* p-value: **0.9988**
-*  **Do not reject**
-* Conclusion: Conductivity fits a Normal distribution.
+	* Test statistic: **4.3558**
+	* Degrees of freedom: **5**
+	* p-value: **0.9988**
+	*  **Do not reject**
+	* Conclusion: Conductivity fits a Normal distribution.
 
 ---
 
@@ -89,8 +89,8 @@ Comparing village averages to **Bisleri water sample values**:
 
 ### Interpretation:
 
-* pH levels are comparable to bottled water.
-* TDS and Conductivity are **significantly higher**, indicating contamination or hard water.
+	* pH levels are comparable to bottled water.
+	* TDS and Conductivity are **significantly higher**, indicating contamination or hard water.
 
 ---
 
@@ -100,9 +100,9 @@ Recommended plots (available in scripts):
 
 ### ✔ Histogram + Distribution Fit
 
-* pH (Lognormal fit)
-* TDS (Gamma fit)
-* Conductivity (Normal fit)
+	* pH (Lognormal fit)
+	* TDS (Gamma fit)
+	* Conductivity (Normal fit)
 
 ### ✔ Boxplots
 
@@ -122,29 +122,29 @@ Recommended plots (available in scripts):
 
 ### ✔ pH
 
-* Safe range (mean = 7.426)
-* No major deviation from Bisleri water
+	* Safe range (mean = 7.426)
+	* No major deviation from Bisleri water
 
 ###  TDS
 
-* Mean = **668.78 mg/L**, above WHO limit (500 mg/L)
-* Several villages exceed **900 mg/L** (unsafe)
+	* Mean = **668.78 mg/L**, above WHO limit (500 mg/L)
+	* Several villages exceed **900 mg/L** (unsafe)
 
 ###  Conductivity
 
-* Mean = **634.59 μS/cm**, high for potable water
-* Indicates excessive dissolved salts
+	* Mean = **634.59 μS/cm**, high for potable water
+	* Indicates excessive dissolved salts
 
 ### 🔎 Worst-affected villages:
 
-* Nagaon (TDS = 991)
-* Saundane (TDS = 977)
-* Laling (TDS = 947)
+	* Nagaon (TDS = 991)
+	* Saundane (TDS = 977)
+	* Laling (TDS = 947)
 
-###  Final Conclusion
-
+###  **Final Conclusion
+**
 Dhule Taluka drinking water is **chemically unsafe** in many villages due to elevated TDS and conductivity levels. Compared to Bisleri water, the quality difference is **statistically significant**. Long-term consumption may increase risks for:
 
-* Kidney issues
-* Gastrointestinal problems
-* Water hardness-related diseases
+	* Kidney issues
+	* Gastrointestinal problems
+	* Water hardness-related diseases
