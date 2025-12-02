@@ -1,34 +1,12 @@
-**This is a Teacher Management System using Python's Tkinter for the GUI and MySQL (via pymysql) as the database.**
-
-Features of the Program :-
-
-1) Add Teacher: Adds a teacher's details (UID, Name, Email, Contact, Subject) into the database.
-
-2) Update Teacher: Updates an existing teacher's details.
-
-3) Delete Teacher: Deletes a teacher’s record.
-
-4) Clear Fields: Clears all input fields.
-
-5) Search Teacher: Searches for teachers by UID or Name.
-
-6) Display All Teachers: Fetches and displays all teacher records from the database.
-
-7) Send Email: Sends an email to the selected teacher.
-
-8) Navigation Between Pages: Switches between Manage Teacher and Search Teacher pages.
-
-**Set Up MySQL Database**
-
-**Statistical Analysis of Drinking Water Quality Dhule Taluka.**
+**Statistical Analysis of Drinking Water Quality Dhule Taluka.**  				
 
 **Overview**
 
 This project presents a detailed statistical study of drinking water quality across **50 villages in Dhule Taluka**. Water samples were tested for three major quality parameters:
 
-1) **pH**
-2) **TDS (Total Dissolved Solids)**
-3) **Electrical Conductivity**
+			1) **pH**
+			2) **TDS (Total Dissolved Solids)**
+			3) **Electrical Conductivity**
 
 These parameters were compared against internationally accepted standards and **Bisleri bottled water** as a reference benchmark. The project demonstrates complete statistical workflow including data cleaning, descriptive analysis, distribution fitting, hypothesis testing, and visualization.
 
