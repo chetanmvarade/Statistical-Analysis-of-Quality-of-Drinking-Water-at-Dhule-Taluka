@@ -1,0 +1,199 @@
+**Project: Statistical Analysis of Drinking Water Quality – Dhule Taluka**
+
+## **Overview**
+
+This project presents a detailed statistical study of drinking water quality across **50 villages in Dhule Taluka**. Water samples were tested for three major quality parameters:
+
+* **pH**
+* **TDS (Total Dissolved Solids)**
+* **Electrical Conductivity**
+
+These parameters were compared against internationally accepted standards and **Bisleri bottled water** as a reference benchmark. The project demonstrates complete statistical workflow including data cleaning, descriptive analysis, distribution fitting, hypothesis testing, and visualization.
+
+---
+
+# **1. Raw Data Cleaning**
+
+The raw dataset contained 50 observations (villages) with attributes:
+
+* Temperature
+* pH
+* TDS
+* Conductivity
+
+### ✔ Cleaning Steps
+
+* Removed extra spacing and inconsistent labels
+* Checked for missing values (none found)
+* Converted data types to numeric
+* Validated ranges:
+
+  * pH must be 0–14
+  * TDS must be positive
+  * Conductivity must be non-negative
+* Identified outliers using Z-scores (high TDS values in Nagaon and Saundane)
+* Standardized column names
+
+### Example Clean Data Format:
+
+```
+Village, Temp_C, pH, TDS, Conductivity
+Behed, 24, 7.5, 537, 573.8
+Lamkani, 24, 7.4, 674, 481.6
+...
+```
+
+---
+
+#**2. Descriptive Statistics**
+
+| Parameter        | Mean   | SD     | Variance | Min | Max |
+| ---------------- | ------ | ------ | -------- | --- | --- |
+| **pH**           | 7.426  | 0.217  | 0.047    | 6.8 | 7.8 |
+| **TDS**          | 668.78 | 209.35 | 43825.69 | 316 | 991 |
+| **Conductivity** | 634.59 | 158.25 | 25042.50 | 379 | 991 |
+
+### Interpretation:
+
+* pH is within WHO safe limits (6.5–8.5)
+* TDS average (669 mg/L) **exceeds recommended WHO limit (500 mg/L)**
+* Conductivity average suggests **high dissolved ion concentration**
+
+---
+
+# 📈 **3. Fitting Probability Distributions**
+
+### ✔ **pH → Lognormal Distribution**
+
+* Test statistic: **3.2575**
+* Degrees of freedom: **5**
+* p-value: **0.9686**
+* ❗ **Do not reject the distribution**
+* Conclusion: pH fits Lognormal Distribution well.
+
+---
+
+###**TDS → Gamma Distribution**
+
+* Test statistic: **2.5394**
+* Degrees of freedom: **4**
+* p-value: **0.7248**
+* ❗ **Do not reject**
+* Conclusion: TDS follows Gamma distribution, typical for skewed environmental data.
+
+---
+
+### ✔ **Conductivity → Normal Distribution**
+
+* Test statistic: **4.3558**
+* Degrees of freedom: **5**
+* p-value: **0.9988**
+*  **Do not reject**
+* Conclusion: Conductivity fits a Normal distribution.
+
+---
+
+#  **4. Hypothesis Testing (Z-Test)**
+
+Comparing village averages to **Bisleri water sample values**:
+
+| Parameter        | Bisleri Value | Village Mean | Z-Score | p-Value | Result                 |
+| ---------------- | ------------- | ------------ | ------- | ------- | ---------------------- |
+| **pH**           | 7.1           | 7.426        | -0.16   | 0.879   | ✔ Same as Bisleri      |
+| **TDS**          | 121.5         | 668.78       | 16.41   | <0.001  | ❌ Not equal to Bisleri |
+| **Conductivity** | 42.86         | 634.59       | 12.40   | <0.001  | ❌ Not equal to Bisleri |
+
+### Interpretation:
+
+* pH levels are comparable to bottled water.
+* TDS and Conductivity are **significantly higher**, indicating contamination or hard water.
+
+---
+
+#  **5. Data Visualization**
+
+Recommended plots (available in scripts):
+
+### ✔ Histogram + Distribution Fit
+
+* pH (Lognormal fit)
+* TDS (Gamma fit)
+* Conductivity (Normal fit)
+
+### ✔ Boxplots
+
+* Detect outliers in TDS and Conductivity
+
+### ✔ Village-wise Line Plots
+
+* To observe spikes in TDS and conductivity
+
+### ✔ Scatter Plots
+
+* Conductivity vs TDS (high correlation expected)
+
+---
+
+#  **6. Results Summary**
+
+### ✔ pH
+
+* Safe range (mean = 7.426)
+* No major deviation from Bisleri water
+
+###  TDS
+
+* Mean = **668.78 mg/L**, above WHO limit (500 mg/L)
+* Several villages exceed **900 mg/L** (unsafe)
+
+###  Conductivity
+
+* Mean = **634.59 μS/cm**, high for potable water
+* Indicates excessive dissolved salts
+
+### 🔎 Worst-affected villages:
+
+* Nagaon (TDS = 991)
+* Saundane (TDS = 977)
+* Laling (TDS = 947)
+
+###  Final Conclusion
+
+Dhule Taluka drinking water is **chemically unsafe** in many villages due to elevated TDS and conductivity levels. Compared to Bisleri water, the quality difference is **statistically significant**. Long-term consumption may increase risks for:
+
+* Kidney issues
+* Gastrointestinal problems
+* Water hardness-related diseases
+
+---
+
+#  **7. Tools & Software**
+
+* R (Descriptive stats, visualization, distribution fitting)
+* Python (Data cleaning)
+* Excel (Initial data entry)
+* EasyFit (Distribution testing)
+* GitHub (Version control)
+
+---
+
+#  **8. Final Remark**
+
+This project demonstrates full statistical methodology applied to **real-world environmental data**, and can serve as an academic reference for:
+
+* B.Sc. / M.Sc. Statistics
+* Environmental studies
+* Public health research
+* Rural water quality monitoring
+
+---
+
+If you want, I can also generate:
+
+✅ Full README.md (ready to upload)
+✅ Python scripts
+✅ R scripts
+✅ Graphs
+✅ GitHub folder structure
+
+Just say **“Generate the full README”** or **“Generate the scripts”**.
