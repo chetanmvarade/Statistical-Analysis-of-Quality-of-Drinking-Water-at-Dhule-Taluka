@@ -1,4 +1,4 @@
-**Project: Statistical Analysis of Drinking Water Quality – Dhule Taluka**
+**Project: Statistical Analysis of Drinking Water Quality – Dhule Taluka.**
 
 ## **Overview**
 
@@ -164,36 +164,3 @@ Dhule Taluka drinking water is **chemically unsafe** in many villages due to ele
 * Kidney issues
 * Gastrointestinal problems
 * Water hardness-related diseases
-
----
-
-#  **7. Tools & Software**
-
-* R (Descriptive stats, visualization, distribution fitting)
-* Python (Data cleaning)
-* Excel (Initial data entry)
-* EasyFit (Distribution testing)
-* GitHub (Version control)
-
----
-
-#  **8. Final Remark**
-
-This project demonstrates full statistical methodology applied to **real-world environmental data**, and can serve as an academic reference for:
-
-* B.Sc. / M.Sc. Statistics
-* Environmental studies
-* Public health research
-* Rural water quality monitoring
-
----
-
-If you want, I can also generate:
-
-✅ Full README.md (ready to upload)
-✅ Python scripts
-✅ R scripts
-✅ Graphs
-✅ GitHub folder structure
-
-Just say **“Generate the full README”** or **“Generate the scripts”**.
