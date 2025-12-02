@@ -1,16 +1,14 @@
 **Statistical Analysis of Drinking Water Quality Dhule Taluka.**
 
-## **Overview**
+**Overview**
 
 This project presents a detailed statistical study of drinking water quality across **50 villages in Dhule Taluka**. Water samples were tested for three major quality parameters:
 
-* **pH**
-* **TDS (Total Dissolved Solids)**
-* **Electrical Conductivity**
+1) **pH**
+2) **TDS (Total Dissolved Solids)**
+3) **Electrical Conductivity**
 
 These parameters were compared against internationally accepted standards and **Bisleri bottled water** as a reference benchmark. The project demonstrates complete statistical workflow including data cleaning, descriptive analysis, distribution fitting, hypothesis testing, and visualization.
-
----
 
 # **1. Raw Data Cleaning**
 
@@ -34,17 +32,6 @@ The raw dataset contained 50 observations (villages) with attributes:
 * Identified outliers using Z-scores (high TDS values in Nagaon and Saundane)
 * Standardized column names
 
-### Example Clean Data Format:
-
-```
-Village, Temp_C, pH, TDS, Conductivity
-Behed, 24, 7.5, 537, 573.8
-Lamkani, 24, 7.4, 674, 481.6
-...
-```
-
----
-
 #**2. Descriptive Statistics**
 
 | Parameter        | Mean   | SD     | Variance | Min | Max |
@@ -55,7 +42,7 @@ Lamkani, 24, 7.4, 674, 481.6
 
 ### Interpretation:
 
-* pH is within WHO safe limits (6.5–8.5)
+* pH is within WHO safe limits (6.5 – 8.5)
 * TDS average (669 mg/L) **exceeds recommended WHO limit (500 mg/L)**
 * Conductivity average suggests **high dissolved ion concentration**
 
@@ -64,7 +51,7 @@ Lamkani, 24, 7.4, 674, 481.6
 # 📈 **3. Fitting Probability Distributions**
 
 ### ✔ **pH → Lognormal Distribution**
-
+ 
 * Test statistic: **3.2575**
 * Degrees of freedom: **5**
 * p-value: **0.9686**
