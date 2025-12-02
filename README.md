@@ -1,4 +1,4 @@
-**Statistical Analysis of Drinking Water Quality Dhule Taluka.**
+# **Statistical Analysis of Drinking Water Quality Dhule Taluka.**
 
 This project presents a detailed statistical study of drinking water quality across **50 villages in Dhule Taluka**. Water samples were tested for three major quality parameters:
 
